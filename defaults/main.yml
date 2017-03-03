@@ -1,0 +1,7 @@
+---
+# defaults file for change-asg-elb-endpoint
+asg:
+  name:
+
+elb:
+  name:
