@@ -1,0 +1,4 @@
+---
+# tasks file for change-asg-elb-endpoint
+- name: Change the ASG ELB endpoint
+  command: 'aws autoscaling attach-load-balancers --auto-scaling-group-name {{ asg.name }} --load-balancer-names {{ elb.name }}'
