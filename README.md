@@ -4,15 +4,18 @@ Change the ASG ELB endpoint
 
 ## Role Variables
 
-* `asg.name`                    : Auto Scaling Group name
-* `elb.name`                    : Elastic Load Balancer name
+* `asg`      : Dictionary storing information of the Auto Scaling Group
+  * `name`   : Auto Scaling Group name
+* `elb`      : Dictionary storing information of the Elastic Load Balancer
+  * `name`   : Elastic Load Balancer name
+  * `region` : Elastic Load Balancer region
 
 ## Example playbook
 
 ```yaml
 - hosts: localhost
-  connection: local
-  gather_facts: no
+  connection   : local
+  gather_facts : no
   roles:
     - change-asg-elb-endpoint
 ```
