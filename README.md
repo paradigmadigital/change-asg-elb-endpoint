@@ -25,4 +25,4 @@ Change the ASG ELB endpoint
 GPLv2
 
 ## Author Information
-jamatute (jamatute@paradigma)
+jamatute (jamatute@paradigma.com)
