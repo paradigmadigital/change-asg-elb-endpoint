@@ -11,7 +11,7 @@
   when: elb.name in item.load_balancer_names
 
 - name: Add the new ASG to the ELB
-  command: 'aws autoscaling attach-load-balancers --auto-scaling-group-name {{ asg.name }} --load-balancer-names {{ elb.name }}'
+  command: 'aws autoscaling attach-load-balancers --region {{ elb.region }} --auto-scaling-group-name {{ asg.name }} --load-balancer-names {{ elb.name }}'
 
 - name: Remove the old ASG from the ELB
-  command: 'aws autoscaling detach-load-balancers --auto-scaling-group-name {{ old_asg_of_elb }} --load-balancer-names {{ elb.name }}'
+  command: 'aws autoscaling detach-load-balancers --region {{ elb.region }} --auto-scaling-group-name {{ old_asg_of_elb }} --load-balancer-names {{ elb.name }}'
