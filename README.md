@@ -1,6 +1,6 @@
 # change-asg-elb-endpoint
 
-Change the ASG ELB endpoint
+Change the ASG ELB endpoint, it will return the name of the old ASG as `old_asg_name`
 
 ## Role Variables
 
@@ -25,4 +25,4 @@ Change the ASG ELB endpoint
 GPLv2
 
 ## Author Information
-jamatute (jamatute@paradigma.com)
+jamatute (jamatute@paradigma)
