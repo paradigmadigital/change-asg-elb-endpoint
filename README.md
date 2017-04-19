@@ -25,4 +25,4 @@ Change the ASG ELB endpoint, it will return the name of the old ASG as `old_asg_
 GPLv2
 
 ## Author Information
-jamatute (jamatute@paradigma)
+jamatute (jamatute@paradigmadigital.com)
